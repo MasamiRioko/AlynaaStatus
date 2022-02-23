@@ -27,14 +27,14 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('.t status'):
+    if message.content.startswith('-m status'):
         try:
             status = server.status()
             embed = EmbedBuilder(
-                title="Oh hey, Thicc SMP is online :D",
+                title="Oh hey, Masami SMP is online :D",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["IP (Java + Bedrock)", "thiccsmp.qtpc.tech", True]],
+                fields=[["IP (Java + Bedrock)", "smp.masami.gq", True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
@@ -56,7 +56,7 @@ async def on_message(message):
                 title="Sussy baka, Thicc SMP is online :D",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["IP (Java + Bedrock)", "thiccsmp.qtpc.tech", True]],
+                fields=[["IP (Java + Bedrock)", "smp.masami.gq", True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
@@ -79,7 +79,7 @@ async def on_message(message):
                 title="Telex user huh? Nevermind, Thicc SMP is online :D",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["IP (Java + Bedrock)", "thiccsmp.qtpc.tech", True]],
+                fields=[["IP (Java + Bedrock)", "smp.masami.gq", True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
@@ -101,7 +101,7 @@ async def on_message(message):
                 title="Sussy baka, Thicc SMP is online :D",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["IP (Java + Bedrock)", "thiccsmp.qtpc.tech", True]],
+                fields=[["IP (Java + Bedrock)", "smp.masami.gq", True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
@@ -116,7 +116,7 @@ async def on_message(message):
             ).build()
             await message.channel.send(embed=embed)
 
-            #await message.channel.send('Unikey user huh? Nevermind, wait... **Thicc SMP** **is currently offline**!')
+            #await message.channel.send('Unikey user huh? Nevermind, wait... **Masami SMP** **is currently offline**!')
 
     ## remave ping cuz if i hosted it on the same machine. ping = 0.xx ms => useless
     if message.content.startswith('.t players'):
@@ -124,24 +124,24 @@ async def on_message(message):
             player = server.status()
             playerskyblock = skyblock.status()
             embed = EmbedBuilder(
-                title="Thicc SMP Playercount",
+                title="Masami SMP Playercount",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["SMP", "{0}/69".format(player.players.online), True], ["SkyBlock", "{0}/50".format(playerskyblock.players.online), True]],
+                fields=[["SMP", "{0}/69".format(player.players.online), True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
         except:
             # no need for player status variables as it went offline already.
             embed = EmbedBuilder(
-                title="Thicc SMP is offline :(",
+                title="Masami SMP is offline :(",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(244, 41, 65),
                 fields=[["Try checking us out later!", ":AlynaCri:", True]],
                 thumbnail='https://cdn.discordapp.com/emojis/880069948821622844.png'
             ).build()
             await message.channel.send(embed=embed)
-            #await message.channel.send('Oops, **Thicc SMP** is currently **offline**!')
+            #await message.channel.send('Oops, **Masami SMP** is currently **offline**!')
 
     if message.content.startswith('.t playẻ'):
         try:
@@ -151,7 +151,7 @@ async def on_message(message):
                 title="Telex user? Anyways here is the Thicc SMP Playercount",
                 description="Powered by AlynaaStatus",
                 color=discord.Color.from_rgb(0, 255, 255),
-                fields=[["SMP", "{0}/69".format(player.players.online), True], ["SkyBlock", "{0}/50".format(playerskyblock.players.online), True]],
+                fields=[["SMP", "{0}/69".format(player.players.online), True]],
                 thumbnail='https://cdn.discordapp.com/emojis/878887184915136542.gif'
             ).build()
             await message.channel.send(embed=embed)
@@ -165,7 +165,7 @@ async def on_message(message):
                 thumbnail='https://cdn.discordapp.com/emojis/880069948821622844.png'
             ).build()
             await message.channel.send(embed=embed)
-            #await message.channel.send('Oops, **Thicc SMP** is currently **offline**!')
+            #await message.channel.send('Oops, **Masami SMP** is currently **offline**!')
 
     ## remave ping cuz if i hosted it on the same machine. ping = 0.xx ms => useless (from typical)
     # ping is still here as i also want to get the ping from my webserver when the mainserver is off (in the near future)
